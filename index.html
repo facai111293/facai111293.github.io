@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贾溢铭 | AI产品经理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, 'Segoe UI', 'PingFang SC', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #e94560;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #1a1a2e;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+        .project-stats {
+            color: #e94560;
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        .project-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .project-link {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .contact-links a:hover {
+            background: #e94560;
+            border-color: #e94560;
+        }
+        footer {
+            background: #0f0f1a;
+            color: #888;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">贾溢铭</a>
+            <div class="nav-links">
+                <a href="#about">关于</a>
+                <a href="#projects">作品</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>你好，我是贾溢铭 👋</h1>
+            <p>AI产品经理 · 19岁 · 用产品思维驱动AI落地</p>
+            <div class="badge">📊 精确率96.6% · 召回率100%</div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>我是一名19岁的AI产品经理学习者，热爱用AI解决真实问题。</p>
+                <p>独立完成了「多邻国用户评论情感分析系统」——精确率96.6%，召回率100%，从92条真实评论中自动识别用户痛点。</p>
+                <p>相信产品思维 + AI能力 = 创造价值的无限可能。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background: #f1f3f5;">
+        <div class="container">
+            <h2 class="section-title">核心作品</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>📱 多邻国用户评论情感分析器</h3>
+                    <div class="project-stats">精确率96.6% · 召回率100% · 无漏报</div>
+                    <p>基于大模型的评论情感分析系统，自动提取用户差评、定位核心问题，将产品经理的筛选时间从5小时降低到1小时。</p>
+                    <a href="https://github.com/facai111293/duolingo-review-analyzer" class="project-link" target="_blank">查看项目 →</a>
+                </div>
+                <div class="project-card">
+                    <h3>🎯 模型评估体系</h3>
+                    <div class="project-stats">TP=56 · FP=2 · FN=0</div>
+                    <p>建立了完整的模型评估框架，用混淆矩阵、精确率和召回率量化模型表现，并提出数据驱动的迭代方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">联系我</h2>
+            <div class="contact-links">
+                <a href="https://github.com/facai111293" target="_blank">🐙 GitHub</a>
+                <a href="mailto:2140163475@qq.com">📧 邮箱</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 贾溢铭 · 用AI创造价值</p>
+        </div>
+    </footer>
+</body>
+</html>
